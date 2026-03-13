@@ -1,0 +1,16 @@
+
+
+appName: myhelmapp1
+
+port: 80
+
+namespace: mytg
+
+configmap:
+  name: myhelmapp-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
+image:
+  name: cdtsbikaner/helm
+  tag: v1
